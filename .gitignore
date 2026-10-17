@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+output/
+.gradio/
+
+# local only: post draft, screenshots, editor/agent config
+screenshots/
+DEV_POST.md
+.claude/
+CLAUDE.md

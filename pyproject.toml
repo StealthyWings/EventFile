@@ -1,0 +1,21 @@
+[project]
+name = "eventfile"
+version = "0.1.0"
+description = "Offline event report builder for college clubs, powered by Gemma 4 via Ollama"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+    "gradio>=6.30",
+    "ollama>=0.6",
+    "pillow>=12.0",
+    "python-docx>=1.2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=9"]
+screenshots = ["playwright>=1.64", "mammoth>=1.13"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+markers = ["model: needs a running Ollama with the Gemma model pulled"]
